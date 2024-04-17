@@ -1,7 +1,8 @@
 export function Card({image, title, date}){
     return (
         <div className="card">
-        <img src={require("../img/"+image+".jpg")} alt=""></img>
+        {/* Si la imágen está definida se muestra, si no, no */}
+        {IMAGE && <img src={require("../img/"+image+".jpg")} alt=""></img>}
         <h2>{title}</h2>
         <p>{date}</p>
         </div>
