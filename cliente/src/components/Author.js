@@ -13,8 +13,7 @@ export default function Author(){
 
     return(
         <div className="card">
-            <h1>{autor.name}</h1>
-            <h2>{autor.lastname}</h2>
+            <h1>{autor.name} {autor.lastname}</h1>
             <h2>{autor.date_of_birth}</h2>
             <p>{autor.email}</p>
             <p>{autor.phone_number}</p>
